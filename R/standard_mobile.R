@@ -153,10 +153,10 @@ check_area_cd <- function(area_cd) {
 }
 
 EEncodeCC <- function(x) {
-  .Call("EncodeIntCC", x, PACKGE = packageName())
+  .Call("EncodeIntCC", x, PACKAGE = packageName())
 }
 
 DecodeCC <- function(x) {
-  .Call("DecodeRawCC", x, PACKGE = packageName())
+  .Call("DecodeRawCC", x, PACKAGE = packageName())
 }
 
