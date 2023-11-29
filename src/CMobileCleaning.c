@@ -507,10 +507,10 @@ SEXP PrintMobile(SEXP Mob, SEXP Ccd, SEXP doLongVec) {
         }
       }
       if (long_vec) {
-        Rprintf("%lld: NA\n", i + 1);
+        Rprintf("%lld: NA\n", (long long)i + 1);
       } else {
         if (i < INT_MAX) {
-          Rprintf("%d: NA\n", i + 1);
+          Rprintf("%d: NA\n", (int)i + 1);
         }
       }
       continue;
@@ -525,10 +525,10 @@ SEXP PrintMobile(SEXP Mob, SEXP Ccd, SEXP doLongVec) {
       }
     }
     if (long_vec) {
-      Rprintf("%lld: +%d %03d %03d %03d\n", i + 1, ucci, m1, m2, m3);
+      Rprintf("%lld: +%d %03d %03d %03d\n", (long long)i + 1, ucci, m1, m2, m3);
     } else {
       if (i < INT_MAX) {
-        Rprintf("%d: +%d %03d %03d %03d\n", i + 1, ucci, m1, m2, m3);
+        Rprintf("%d: +%d %03d %03d %03d\n", (int)i + 1, ucci, m1, m2, m3);
       }
     }
   }

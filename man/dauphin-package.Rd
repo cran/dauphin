@@ -6,11 +6,7 @@
 \alias{dauphin-package}
 \title{Dauphin}
 \description{
-Phone numbers are often represented as strings because there
-    is no obvious and suitable native representation for them.  This leads
-    to high memory use and a lack of standard representation.  The package
-    provides integer representation of Australian phone numbers with optional
-    raw vector calling code. The package name is an extension of 'au' and 'ph'.
+Phone numbers are often represented as strings because there is no obvious and suitable native representation for them. This leads to high memory use and a lack of standard representation. The package provides integer representation of Australian phone numbers with optional raw vector calling code. The package name is an extension of 'au' and 'ph'.
 }
 \author{
 \strong{Maintainer}: Hugh Parsonage \email{hugh.parsonage@gmail.com}
