@@ -211,7 +211,7 @@ SEXP CStandardMobile(SEXP xx) {
     error("`mob` was type '%s' but must be type character", type2char(TYPEOF(xx))); // # nocov
   }
   R_xlen_t N = xlength(xx);
-  const SEXP * xp = STRING_PTR(xx);
+  const SEXP * xp = STRING_PTR_RO(xx);
   SEXP ans = PROTECT(allocVector(INTSXP, N));
   SEXP Int = PROTECT(allocVector(RAWSXP, N));
   int * restrict ansp = INTEGER(ans);
@@ -397,7 +397,7 @@ SEXP C_DauphinLandline(SEXP xx, SEXP AreaCd) {
   }
   SEXP ans = PROTECT(allocVector(INTSXP, N));
   int * restrict ansp = INTEGER(ans);
-  const SEXP * xp = STRING_PTR(xx);
+  const SEXP * xp = STRING_PTR_RO(xx);
   for (R_xlen_t i = 0; i < N; ++i) {
     int n = length(xp[i]);
     ansp[i] = NA_INTEGER;
@@ -431,8 +431,8 @@ SEXP C_Mobile_Home(SEXP xx, SEXP yy, SEXP AreaCd) {
   if (!isString(xx) || !isString(yy)) {
     error("Internal error(C_Mobile_Home): Wrong types."); // # nocov
   }
-  const SEXP * xp = STRING_PTR(xx);
-  const SEXP * yp = STRING_PTR(yy);
+  const SEXP * xp = STRING_PTR_RO(xx);
+  const SEXP * yp = STRING_PTR_RO(yy);
 
   SEXP mob = PROTECT(allocVector(INTSXP, N));
   SEXP hom = PROTECT(allocVector(INTSXP, N));

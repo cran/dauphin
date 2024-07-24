@@ -1,6 +1,6 @@
-8bc6f1d513fe8568d4d90aa88ef28b3b *DESCRIPTION
+e2c1539695897fd352688b22a2366090 *DESCRIPTION
 111a8f45fe7e3a113ab507245b9e48c6 *NAMESPACE
-ba16acbfb05823f4ef93262226ea828a *NEWS.md
+e54789530213bb65ff7c08da8337e876 *NEWS.md
 c945be6e08cf5a83a8604a9461de2a8c *R/dauphin-package.R
 915cbc6f96ba644598f18d23c3119907 *R/grepl_09.R
 ba6ea4a64fd664df4c91bbb5285cb239 *R/standard_mobile.R
@@ -11,7 +11,7 @@ d5bae2c686f955ead42c5aa0a4dd19e7 *inst/tinytest/test_grepl_09.R
 d1cbac40a77978f6aab0ddac2593b6ba *inst/tinytest/test_standard_mobile.R
 6b844fffcabc5d826e7c0c2678c250d9 *man/dauphin-package.Rd
 f06fcf9a05b998d3b23f053424283136 *man/dauphin_mobile.Rd
-d81a5b9998cad9092f42eec45b3a37ad *src/CMobileCleaning.c
+4d8fcef296a26b8c5db6622cc1f54f46 *src/CMobileCleaning.c
 cc0244f847d479e5ff854087b3c25f0e *src/C_CheckCC.c
 6c14563def58ec6b35f3372c32b11481 *src/Cgrepl_09.c
 0d825a71884f463dfece692e97bf551e *src/dauphin.h
